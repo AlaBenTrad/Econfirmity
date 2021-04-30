@@ -326,25 +326,25 @@ button:hover {
                 <input type="text" placeholder="Workforce number" />
             </div>
             <div data-panel="two">
-                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Avez-vous mis en place un service de médecine de travail autonome au sein de votre entreprise ?
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Have you set up an independent occupational medicine service within your company ?
                 </h4>
                 <input type="text" placeholder="Your answer here" />
             </div>
             <div data-panel="three">
-                <h4 style="padding-bottom: 30px; padding-top: 30px;">L’avez-vous aménagé conformément aux exigences réglementaires ?</h4>
+                <h4 style="padding-bottom: 30px; padding-top: 30px;">Have you fitted it out in accordance with regulatory requirements ?</h4>
                 <input type="text" placeholder="Your answer here" />
             </div>
             <div data-panel="four">
-                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Is your workforce greater than or equal to 500 workers?</h4>
+                <h4 style="padding-bottom: 30px; padding-top: 30px;">Have you obtained the approval of the labor inspector with territorial jurisdiction for your premises and equipment?</h4>
                 <input type="text" placeholder="Your answer here" />
             </div>
             <div data-panel="five">
-                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Avez-vous obtenu l’approbation du médecin inspecteur du travail territorialement compétent pour vos locaux et équipements ?
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Has your occupational doctor / occupational health service drawn up your company profile?
                 </h4>
                 <input type="text" placeholder="Your answer herer" />
             </div>
             <div data-panel="six">
-                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Votre médecin du travail/service de médecine du travail a-t-il établi la fiche de votre entreprise ?
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Have you identified the missions and tasks to be carried out by the occupational physician / SMT?
                 </h4>
                 <input type="text" placeholder="Your answer here" />
             </div>
@@ -422,7 +422,16 @@ button:hover {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4 class="margin-bottom-30" style="color: white;">SUBSCRIBE TO OUR
+                        NEWSLETTER!</h4>
+                        <h6 class="margin-bottom-30" style="color: white;">And become part of the Community of Econfirmity.</h6>
+                    <div class="contact-text">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="" style="margin-bottom: 15px;">
+                        <a href="#features" class="main-button-slider">SUBSCRIBE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <ul class="social">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -474,8 +483,9 @@ button:hover {
         $('.form input[type="radio"]:nth-of-type(' + selectedIndex + ')').prop('checked', true);
     
         if (selectedIndex == 6) {
-            $('button').html('Submit');
-            setTimeout(() => {  alert('Your business confirmty has been saved!'); }, 2000);
+            $('button').html('Submit and download rapport');
+            setTimeout(() => {  alert('Your business confirmty has been saved! Check the example of the report that you will recive');
+            window.open('qst.pdf'); }, 3000);
            
             
 
