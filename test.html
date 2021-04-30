@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Econfirmity - where your conformity is legal </title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+
+    </head>
+    
+    <body>
+       
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="assets/images/lg.png" alt="Softy Pinko"/>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">Work Process</a></li>
+                            <li><a href="index.html">Testimonials</a></li>
+                            <li><a href="index.html">Pricing Tables</a></li>
+                            <li><a href="test.html">Demo</a></li>
+                            <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        <h1>A demonstration of Econfirmity</h1>
+                        <p>Note that the example interview is not intended to make logical sense as an interview (in fact it is rather silly); it is simply intended to demonstrate the features of our solution which is included in Econfirmity MVP.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <style>
+        .stages {
+	font-size: 0;
+	text-align: justify;
+}
+
+.stages:after {
+	content: '';
+	display: inline-block;
+	font-size: 0;
+	text-align: justify;
+	width: 100%;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.stages label {
+	background: #ffffff;
+	border: solid 5px #c0c0c0;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0;
+	font-weight: 700;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 50px;
+	z-index: 1;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.stages label:after {
+	content: '\2713';
+	color: #8261ee;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#one:checked ~ .stages label[for="one"],
+#two:checked ~ .stages label[for="two"],
+#three:checked ~ .stages label[for="three"],
+#four:checked ~ .stages label[for="four"],
+#five:checked ~ .stages label[for="five"],
+#six:checked ~ .stages label[for="six"] {
+	border-color: #8261ee;
+}
+
+.stages label.active{
+	border-color: purple !important;
+}
+
+#one:checked ~ .stages label,
+#two:checked ~ .stages label[for="one"] ~ label,
+#three:checked ~ .stages label[for="two"] ~ label,
+#four:checked ~ .stages label[for="three"] ~ label,
+#five:checked ~ .stages label[for="four"] ~ label,
+#six:checked ~ .stages label[for="five"] ~ label {
+	font-size: 1rem;
+}
+
+#one:checked ~ .stages label:after,
+#two:checked ~ .stages label[for="one"] ~ label:after,
+#three:checked ~ .stages label[for="two"] ~ label:after,
+#four:checked ~ .stages label[for="three"] ~ label:after,
+#five:checked ~ .stages label[for="four"] ~ label:after,
+#six:checked ~ .stages label[for="five"] ~ label:after {
+	display: none;
+}
+
+.progress > span {
+	background: #c0c0c0;
+	display: inline-block;
+	height: 5px;
+	transform: translateY(-2.75em);
+	transition: 0.3s;
+	width: 0;
+}
+
+#two:checked ~ .progress span {
+	width: calc(100% / 5 * 1);
+}
+
+#three:checked ~ .progress span {
+	width: calc(100% / 5 * 2);
+}
+
+#four:checked ~ .progress span {
+	width: calc(100% / 5 * 3);
+}
+
+#five:checked ~ .progress span {
+	width: calc(100% / 5 * 4);
+}
+
+#six:checked ~ .progress span {
+	width: calc(100% / 5 * 5);
+}
+
+.panels div {
+	display: none;
+}
+
+#one:checked ~ .panels [data-panel="one"],
+#two:checked ~ .panels [data-panel="two"],
+#three:checked ~ .panels [data-panel="three"],
+#four:checked ~ .panels [data-panel="four"],
+#five:checked ~ .panels [data-panel="five"],
+#six:checked ~ .panels [data-panel="six"] {
+	display: block;
+}
+/* Custom code for the demo */
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+a {
+	color: #8261ee;
+}
+
+h2,
+h4 {
+	margin-top: 0;
+}
+
+.form {
+	background: #ffffff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+	margin: 4em;
+	min-width: 480px;
+	padding: 1em;
+}
+
+.panels div {
+	border-top: solid 1px #c0c0c0;
+	margin: 1em 0 0;
+	padding: 1em 0 0;
+}
+
+input {
+	box-sizing: border-box;
+	display: block;
+	padding: .4em;
+	width: 100%;
+}
+
+button {
+	background-color: #8261ee;
+	border: 0;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 1em 0 0 0;
+	padding: 1em;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+    </style>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+  
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+   
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Home Parallax Start ***** -->
+    
+    <!-- ***** Home Parallax End ***** -->
+
+    <!-- ***** Testimonials Start ***** -->
+  
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Pricing Plans Start ***** -->
+    
+    <!-- ***** Pricing Plans End ***** -->
+
+    <!-- ***** Counter Parallax Start ***** -->
+    
+    <!-- ***** Counter Parallax End ***** -->   
+
+    <!-- ***** Blog Start ***** -->
+    
+    <!-- ***** Blog End ***** -->
+    
+    <div class="form" >
+        <h2 style="padding-bottom: 30px;">Multi Page Form for your business confirmity</h2>
+        <p style="padding-bottom: 5px;">Divide long forms, enable users to flick back and forward.</p>
+        <p style="padding-bottom: 30px;">While thes question is part of Econfirmity MVP.</p>
+    
+        <input id="one" type="radio" name="stage" checked="checked" />
+        <input id="two" type="radio" name="stage" />
+        <input id="three" type="radio" name="stage" />
+        <input id="four" type="radio" name="stage" />
+        <input id="five" type="radio" name="stage" />
+        <input id="six" type="radio" name="stage" />
+    
+        <div class="stages">
+            <label for="one">1</label>
+            <label for="two">2</label>
+            <label for="three">3</label>
+            <label for="four">4</label>
+            <label for="five">5</label>
+            <label for="six">6</label>
+        </div>
+    
+        <span class="progress"><span></span></span>
+    
+        <div class="panels">
+            <div data-panel="one">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Is your workforce greater than or equal to 500 workers ?</h4>
+                <input type="text" placeholder="Workforce number" />
+            </div>
+            <div data-panel="two">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Avez-vous mis en place un service de médecine de travail autonome au sein de votre entreprise ?
+                </h4>
+                <input type="text" placeholder="Your answer here" />
+            </div>
+            <div data-panel="three">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;">L’avez-vous aménagé conformément aux exigences réglementaires ?</h4>
+                <input type="text" placeholder="Your answer here" />
+            </div>
+            <div data-panel="four">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Is your workforce greater than or equal to 500 workers?</h4>
+                <input type="text" placeholder="Your answer here" />
+            </div>
+            <div data-panel="five">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Avez-vous obtenu l’approbation du médecin inspecteur du travail territorialement compétent pour vos locaux et équipements ?
+                </h4>
+                <input type="text" placeholder="Your answer herer" />
+            </div>
+            <div data-panel="six">
+                <h4 style="padding-bottom: 30px; padding-top: 30px;"> Votre médecin du travail/service de médecine du travail a-t-il établi la fiche de votre entreprise ?
+                </h4>
+                <input type="text" placeholder="Your answer here" />
+            </div>
+        </div>
+    
+        <button id="demo">Next</button>
+    
+    </div>
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Talk To Us</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Contact us for more information about Econfirmity</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+           
+            <div class="row">
+                <!-- ***** Contact Text Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="margin-bottom-30">Keep in touch</h5>
+                    <div class="contact-text">
+                        
+                        <br>Phone number : +216 20 381 615</p>
+                        <p>Email : operationsmanager@redstart.tn</p>
+                    </div>
+                </div>
+                <!-- ***** Contact Text End ***** -->
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2021 - Lykkyhus</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+        
+
+        $('.form .stages label').click(function() {
+        var radioButtons = $('.form input:radio');
+        var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
+        selectedIndex = selectedIndex + 1;
+    });
+    
+    $('.form button').click(function() {
+        var radioButtons = $('.form input:radio');
+        var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
+    
+        selectedIndex = selectedIndex + 2;
+    
+        $('.form input[type="radio"]:nth-of-type(' + selectedIndex + ')').prop('checked', true);
+    
+        if (selectedIndex == 6) {
+            $('button').html('Submit');
+            setTimeout(() => {  alert('Your business confirmty has been saved!'); }, 2000);
+           
+            
+
+        }
+        
+        
+ 
+    });
+    </script>
+   
+    
+  </body>
+ 
+</html>
